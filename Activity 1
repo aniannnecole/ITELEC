@@ -1,0 +1,17 @@
+public class Main {
+  public static void main(String[] args) {
+  
+  int x = 20;
+  int y = 30;
+  int total;
+  
+  total = x + y;
+  
+  if (total == 50) {
+  System.out.println("Correct");
+}
+else {
+System.out.println("Try Again");
+}
+ }
+}
