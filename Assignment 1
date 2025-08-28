@@ -1,0 +1,51 @@
+package com.example.activitylifecycle;
+
+import android.os.Bundle;
+import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "ActivityLifecycle";
+
+//onCreate
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Log.d(TAG, "onCreate: Activity Created");
+    }
+
+//onStart
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart: Activity Visible");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume: Activity in Foreground (User can interact)");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause: Activity Paused (Partially Hidden)");
+    }
+
+//onStop
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop: Activity Stopped (Not Visible)");
+    }
+
+//onDestroy
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy: Activity Destroyed");
+    }
+}
