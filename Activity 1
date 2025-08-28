@@ -1,17 +1,40 @@
 public class Main {
   public static void main(String[] args) {
   
-  int x = 20;
-  int y = 30;
-  int total;
-  
-  total = x + y;
-  
-  if (total == 50) {
-  System.out.println("Correct");
-}
-else {
-System.out.println("Try Again");
-}
+        int x = 20;
+        int y = 30;
+        int total;
+
+        // Addition
+        total = x + y;
+        if (total == 50) {
+            System.out.println("Addition is Correct: " + total);
+        } else {
+            System.out.println("Addition - Try Again");
+        }
+
+        // Subtraction
+        total = x - y;
+        if (total == -10) {
+            System.out.println("Subtraction is Correct: " + total);
+        } else {
+            System.out.println("Subtraction - Try Again");
+        }
+
+        // Multiplication
+        total = x * y;
+        if (total == 600) {
+            System.out.println("Multiplication is Correct: " + total);
+        } else {
+            System.out.println("Multiplication - Try Again");
+        }
+
+        // Division
+        total = x / y; // Since 20/30 = 0 in integer division
+        if (total == 0) {
+            System.out.println("Division is Correct: " + total);
+        } else {
+            System.out.println("Division - Try Again");
+        }
  }
 }
